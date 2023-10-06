@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding in Bootstrap</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <style>
+        body{
+            background-color: aliceblue;
+            
+        }
+        .row{
+            background-color: teal;
+            margin-bottom: 10px;
+        }
+        .row div{
+            background-color: darkkhaki;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h2>Padding in Bootstrap</h2>
+    <div class="row">//
+        <div class="col-6">Without Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+    <div class="row">
+        <div class="col-6 p-3">With Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+      <div class="row">
+        <div class="col-6 pt-3">With Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+      <div class="row">
+        <div class="col-6 pb-3">With Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+      <div class="row">
+        <div class="col-6 pe-3">With Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+      <div class="row">
+        <div class="col-6 ps-3">With Margin</div>
+        <div class="col-4">Sample</div>
+      </div>
+   </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--
+    p-5 (0-5) all side
+    p-lg-3
+    ps-1 (left)
+    pe-1 (right)
+    pt-1 (top)
+    pb-1 (bottom)
+
+    pb-lg-1
+
+   p-*-1 (*-sm,md,lg,xl,xxl (1,2,3,4,5))
+   default - 0  0px  (base on rem)
+   1  16px * 0.25 = 4px
+   2  16px * 0.5  = 8px
+   3  16px * 1    = 16px
+   4  16px * 1.5  = 24px
+   5  16px * 3    = 48px
+
+
+-->
